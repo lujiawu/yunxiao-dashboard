@@ -1,0 +1,11 @@
+[package]
+name = "taskdash-gui"
+description = "GPUI Kit desktop dashboard for Yunxiao work items."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+taskdash-core = { workspace = true }
+gpui-kit = { workspace = true }
+chrono = { workspace = true }

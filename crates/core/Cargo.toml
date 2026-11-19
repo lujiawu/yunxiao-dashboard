@@ -1,0 +1,20 @@
+[package]
+name = "taskdash-core"
+description = "Data layer for the Yunxiao task dashboard: config, API client, hierarchy index, filters."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+serde = { workspace = true }
+serde_json = { workspace = true }
+ureq = { workspace = true }
+thiserror = { workspace = true }
+chrono = { workspace = true }
+
+[target.'cfg(unix)'.dependencies]
+libc = "0.2"
+
+[[bin]]
+name = "taskdash"
+path = "src/bin/taskdash.rs"
